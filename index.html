@@ -8,9 +8,61 @@
     <script src="js/scripts.js"></script>
   </head>
   <body>
-    <div class = "container"
+    <div class = "container">
       <h1>Welcome!</h1>
-      <h3>We're interested in knowing your stance on the issues below. Please select the answer(s) that best represent your views.</h3>
+      <h4>We're interested in knowing your stance on the issues below. Please select the answer(s) that best represent your views.</h4>
+      <br></br>
+      <form id="views">
+        <div id="question1">
+          <p>Which of the following options do you tend to agree with most?</p>
+          <div class="radio">
+            <label>
+              <input type="radio" name="choice" value="pro-choice">
+              Pro-Choice
+            </label>
+          </div> <!-- closes pro-choice -->
+          <div class="radio">
+            <label>
+              <input type="radio" name="choice" value="pro-life">
+              Pro-Life
+            </label>
+          </div> <!-- closes pro-choice -->
+        </div>
+
+        <br></br>
+
+        <div id="question2">
+          <p>Do you agree with the death penalty?</p>
+          <div class="radio">
+            <label>
+              <input type="radio" name="death_penalty" value="No">
+              No
+            </label>
+          </div> <!-- closes no -->
+          <div class="radio">
+            <label>
+              <input type="radio" name="death_penalty" value="Yes">
+              Yes
+            </label>
+          </div> <!-- closes yes -->
+        </div>
+
+        <br></br>
+        <button type="submit" class="btn">Show my results</button>
+
+      </form>
+
+      <div id="liberal_text">
+        <p>You tend to lean on the liberal side of things based on your responses</p>
+      </div>
+
+      <div id="moderate_text">
+        <p>Looks like you're in the middle! You're a moderate!</p>
+      </div>
+
+      <div id="conservative_text">
+        <p>Based on your responses, you tend to lean on the conservative side of things.</p>
+      </div>
 
     </div> <!-- closes the container -->
   </body>
